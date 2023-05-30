@@ -73,6 +73,7 @@ li {
   flex: 0 1 auto;
   width: 35%;
   height: auto;
+  align-self: center;
 }
 
 /*SKILLS SPECIFIC STYLINGS*/
