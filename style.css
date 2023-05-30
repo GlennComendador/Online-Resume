@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*GENERAL STYLINGS*/
+body {
+  font-family: verdana;
+  color: #1c1c1c;
+}
+
+.main-header {
+  text-align: center;
+  background-color: #f7cd7a;
+  padding: 450px 250px;
+}
+
+nav a:link {
+  font-size: 20px;
+  padding: 10px;
+  line-height: 2;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+li {
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+/*ABOUT ME STYLINGS*/
+
+#about-me-div {
+  display: flex;
+  flex-direction: column;
+  margin: 150px 400px;
+}
+
+.about-me-text {
+  display: flex;
+  gap: 100px;
+  margin: 50px 0;
+}
+
+.about-me-contents {
+  flex: 1;
+  line-height: 2;
+  text-align: justify;
+  align-self: center;
+}
+
+.about-me-img {
+  flex: 0 1 auto;
+  width: 35%;
+  height: auto;
+}
+
+/*SKILLS SPECIFIC STYLINGS*/
+
+ul,
+.hard-skills-div,
+.other-skills-div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hard-skills-div {
+  align-self: flex-start;
+}
+
+ul {
+  gap: 15px;
+}
+
+/*OTHER STYLINGS*/
+
+#careers-div,
+#education-div,
+#skills-div,
+#projects-div,
+#certificates-div,
+#contact-me-div {
+  display: flex;
+  flex-direction: column;
+  margin: 150px 200px;
+}
+
+.experience-div,
+.school-graduated-div,
+.overall-skills-div,
+.cert-finished-div,
+.contact-separation {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin: 50px 0;
+}
+
+.dates {
+  flex: 0 1 300px;
+  align-self: flex-start;
+  text-align: right;
+}
+
+.job,
+.dlsu,
+.hard-skills-div,
+.other-skills-div,
+.certificate-received {
+  flex: 1;
+}
+
+.location,
+.instructor,
+.projects {
+  margin-bottom: 40px;
+}
+
+/*PROJECT STYLINGS*/
+
+.project-separation {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.project-texts {
+  margin-bottom: 40px;
+}
+
+.java-games {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 100px;
+}
+
+.proj-img,
+.java-img {
+  width: 80%;
+  height: auto;
+  align-self: center;
+}
+
+.java-img {
+  width: 30%;
+}
+
+.return {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*CONTACT ME STYLINGS*/
+#contact-me-div {
+  margin: 400px 200px;
+  justify-content: center;
+}
+
+.contact-separation {
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.contact-me-text {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.mode-details {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/*ASIDE AND FOOTER STYLINGS*/
+
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+#copyright {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*HYPERLINK STYLINGS*/
+
+nav a:link {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+a:link {
+  color: #1c1c1c;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #1c1c1c;
+}
+
+a:hover {
+  color: #1c1c1c;
+  /* font-weight: bold; */
+  background-color: #f7cd7a;
+}
+
+a:active {
+  background-color: #f7cd7a;
+}
