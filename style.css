@@ -54,6 +54,7 @@ li {
   display: flex;
   flex-direction: column;
   margin: 150px 400px;
+  /*CHANGE TO CSS GRID HERE*/
 }
 
 .about-me-text {
@@ -84,6 +85,7 @@ ul,
   display: flex;
   flex-direction: column;
   gap: 40px;
+  /*CHANGE TO CSS GRID HERE*/
 }
 
 .hard-skills-div {
@@ -95,6 +97,8 @@ ul {
 }
 
 /*OTHER STYLINGS*/
+
+/*CHANGE TO CSS GRID HERE*/
 
 #careers-div,
 #education-div,
