@@ -142,6 +142,10 @@ ul {
   margin-bottom: 40px;
 }
 
+.other-skills-div {
+  align-self: flex-start;
+}
+
 /*PROJECT STYLINGS*/
 
 .project-separation {
