@@ -244,3 +244,117 @@ a:hover {
 a:active {
   background-color: #f7cd7a;
 }
+
+/*
+SMALLER SCREEN OPTIMIZATIONS
+
+**SMART PHONE SCREEN VIEWPORT SIZES**
+*iPhone SE Screen Size*
+375px x 667px
+
+*iPhone XR to iPhone 14 Pro Max Screen Size*
+414px x 896px
+to 
+430px x 932px
+
+*Samsung Galaxy S20 to Samsung Galaxy S22 Screen Size*
+360px x 800px
+to
+384px x 824px
+
+
+
+**TABLET SCREEN VIEWPORT SIZES**
+iPad Mini 6
+744px x 1133px
+
+iPad 9th Gen
+810px x 1080px
+
+iPad Air 5
+820px x 1180px
+
+iPad Pro 11 Inch
+834px x 1194px
+
+iPad Pro 12.9 Inch
+1024px x 1366px
+*/
+
+@media (min-width: 375px) and (max-width: 744px) {
+  .main-header {
+    padding: 375px 0;
+  }
+
+  #about-me-div,
+  #careers-div,
+  #education-div,
+  #skills-div,
+  #projects-div,
+  #certificates-div,
+  #contact-me-div {
+    margin: 150px 50px;
+  }
+
+  .about-me-text,
+  .overall-skills-div,
+  .experience-div,
+  .school-graduated-div,
+  .cert-finished-div {
+    flex-direction: column;
+  }
+
+  .about-me-img {
+    width: 80%;
+    height: auto;
+  }
+
+  .experience-div,
+  .school-graduated-div,
+  .cert-finished-div {
+    gap: 20px;
+  }
+
+  .dates {
+    flex: 1;
+  }
+
+  .proj-img,
+  .java-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .java-games {
+    flex-direction: column;
+  }
+
+  .contact-separation {
+    gap: 5px;
+  }
+}
+
+@media (min-width: 745px) and (max-width: 1366px) {
+  #about-me-div,
+  #careers-div,
+  #education-div,
+  #skills-div,
+  #projects-div,
+  #certificates-div,
+  #contact-me-div {
+    margin: 150px 50px;
+  }
+
+  .about-me-text {
+    flex-direction: column;
+  }
+
+  .about-me-img {
+    width: 50%;
+    height: auto;
+  }
+
+  .java-games {
+    flex-direction: column;
+  }
+}
