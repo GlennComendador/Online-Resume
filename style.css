@@ -18,6 +18,7 @@ body {
   text-align: center;
   background-color: #f7cd7a;
   padding: 450px 250px;
+  /* padding: 50px 250px; */
 }
 
 nav a:link {
@@ -54,7 +55,6 @@ li {
   display: flex;
   flex-direction: column;
   margin: 150px 400px;
-  /*CHANGE TO CSS GRID HERE*/
 }
 
 .about-me-text {
@@ -72,7 +72,7 @@ li {
 
 .about-me-img {
   flex: 0 1 auto;
-  width: 35%;
+  width: 40%;
   height: auto;
   align-self: center;
 }
@@ -205,6 +205,10 @@ ul {
   margin-bottom: 20px;
 }
 
+.last {
+  margin-bottom: 0;
+}
+
 /*ASIDE AND FOOTER STYLINGS*/
 
 aside {
@@ -281,7 +285,8 @@ iPad Pro 12.9 Inch
 1024px x 1366px
 */
 
-@media (min-width: 375px) and (max-width: 744px) {
+/*MOBILE PORTRAIT ORIENTATION*/
+@media (min-width: 360px) and (max-width: 743px) and (orientation: portrait) {
   .main-header {
     padding: 375px 0;
   }
@@ -330,11 +335,131 @@ iPad Pro 12.9 Inch
   }
 
   .contact-separation {
-    gap: 5px;
+    gap: 15px;
+  }
+
+  .mode-details {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .m-d {
+    margin-bottom: 28px;
+  }
+
+  .first {
+    margin-bottom: 12px;
+  }
+
+  .last {
+    margin-bottom: 0;
   }
 }
 
-@media (min-width: 745px) and (max-width: 1366px) {
+/*MOBILE LANDSCAPE ORIENTATION*/
+@media (min-width: 667px) and (max-width: 932px) and (orientation: landscape) {
+  .main-header {
+    padding: 100px 50px;
+    /* padding: 20px 20px; */
+  }
+
+  #about-me-div,
+  #skills-div,
+  #careers-div,
+  #education-div,
+  #projects-div,
+  #certificates-div,
+  #contact-me-div {
+    margin: 100px 100px;
+  }
+
+  .about-me-text {
+    flex-direction: column;
+  }
+
+  .about-me-img {
+    width: 80%;
+    height: auto;
+  }
+
+  .dates {
+    flex: 0 1 auto;
+  }
+
+  .proj-img {
+    width: 80%;
+    height: auto;
+  }
+
+  .java-img {
+    width: 30%;
+    height: auto;
+  }
+
+  .java-games {
+    gap: 30px;
+  }
+
+  .contact-separation {
+    gap: 15px;
+  }
+
+  .mode-details {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .m-d {
+    margin-bottom: 28px;
+  }
+
+  .first {
+    margin-bottom: 12px;
+  }
+
+  .last {
+    margin-bottom: 0;
+  }
+}
+
+/*TABLET PORTRAIT ORIENTATION*/
+@media (min-width: 744px) and (max-width: 1440px) and (orientation: portrait) {
+  .main-header {
+    padding: 550px 50px;
+    /* padding: 20px 20px; */
+  }
+
+  #about-me-div,
+  #careers-div,
+  #education-div,
+  #skills-div,
+  #projects-div,
+  #certificates-div,
+  #contact-me-div {
+    margin: 150px 50px;
+  }
+
+  .about-me-text {
+    flex-direction: column;
+  }
+
+  .about-me-img {
+    width: 50%;
+    height: auto;
+  }
+
+  .java-games {
+    flex-direction: column;
+  }
+}
+
+/*TABLET LANDSCAPE ORIENTATION*/
+@media (min-width: 1024px) and (max-width: 1440px) and (orientation: landscape) {
+  .main-header {
+    padding: 375px 0;
+    /* padding: 20px 20px; */
+  }
+
   #about-me-div,
   #careers-div,
   #education-div,
