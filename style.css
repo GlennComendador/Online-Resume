@@ -42,6 +42,7 @@ h3 {
 
 p {
   line-height: 1.5;
+  text-align: justify;
 }
 
 li {
@@ -50,7 +51,6 @@ li {
 }
 
 /*ABOUT ME STYLINGS*/
-
 #about-me-div {
   display: flex;
   flex-direction: column;
@@ -66,7 +66,6 @@ li {
 .about-me-contents {
   flex: 1;
   line-height: 2;
-  text-align: justify;
   align-self: center;
 }
 
@@ -78,7 +77,6 @@ li {
 }
 
 /*SKILLS SPECIFIC STYLINGS*/
-
 ul,
 .hard-skills-div,
 .other-skills-div {
@@ -97,9 +95,6 @@ ul {
 }
 
 /*OTHER STYLINGS*/
-
-/*CHANGE TO CSS GRID HERE*/
-
 #careers-div,
 #education-div,
 #skills-div,
@@ -122,10 +117,13 @@ ul {
   margin: 50px 0;
 }
 
+.company {
+  width: 400px;
+}
+
 .dates {
   flex: 0 1 300px;
   align-self: flex-start;
-  text-align: right;
 }
 
 .job,
@@ -139,7 +137,7 @@ ul {
 .location,
 .instructor,
 .projects {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .other-skills-div {
@@ -147,7 +145,6 @@ ul {
 }
 
 /*PROJECT STYLINGS*/
-
 .project-separation {
   display: flex;
   flex-direction: column;
@@ -210,7 +207,6 @@ ul {
 }
 
 /*ASIDE AND FOOTER STYLINGS*/
-
 aside {
   display: flex;
   align-items: center;
@@ -225,7 +221,6 @@ aside {
 }
 
 /*HYPERLINK STYLINGS*/
-
 nav a:link {
   color: #1c1c1c;
   text-decoration: none;
@@ -291,6 +286,7 @@ iPad Pro 12.9 Inch
     padding: 375px 0;
   }
 
+  /*OTHER STYLINGS*/
   #about-me-div,
   #careers-div,
   #education-div,
@@ -309,19 +305,32 @@ iPad Pro 12.9 Inch
     flex-direction: column;
   }
 
-  .about-me-img {
-    width: 80%;
-    height: auto;
-  }
-
   .experience-div,
   .school-graduated-div,
   .cert-finished-div {
     gap: 20px;
   }
 
+  .job,
+  .dlsu,
+  .certificate-received {
+    width: 300px;
+  }
+
   .dates {
     flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .company {
+    width: 300px;
+    align-self: flex-start;
+  }
+
+  /*PROJECT STYLINGS*/
+  .about-me-img {
+    width: 80%;
+    height: auto;
   }
 
   .proj-img,
@@ -334,6 +343,7 @@ iPad Pro 12.9 Inch
     flex-direction: column;
   }
 
+  /*CONTACT ME STYLINGS*/
   .contact-separation {
     gap: 15px;
   }
@@ -363,6 +373,17 @@ iPad Pro 12.9 Inch
     /* padding: 20px 20px; */
   }
 
+  /*ABOUT ME STYLINGS*/
+  .about-me-text {
+    flex-direction: column;
+  }
+
+  .about-me-img {
+    width: 80%;
+    height: auto;
+  }
+
+  /*OTHER STYLINGS*/
   #about-me-div,
   #skills-div,
   #careers-div,
@@ -373,19 +394,24 @@ iPad Pro 12.9 Inch
     margin: 100px 100px;
   }
 
-  .about-me-text {
-    flex-direction: column;
+  .experience-div,
+  .school-graduated-div,
+  .overall-skills-div,
+  .cert-finished-div,
+  .contact-separation {
+    gap: 15px;
   }
 
-  .about-me-img {
-    width: 80%;
-    height: auto;
+  .company {
+    width: 200px;
+    align-self: flex-start;
   }
 
   .dates {
     flex: 0 1 auto;
   }
 
+  /*PROJECT STYLINGS*/
   .proj-img {
     width: 80%;
     height: auto;
@@ -400,10 +426,7 @@ iPad Pro 12.9 Inch
     gap: 30px;
   }
 
-  .contact-separation {
-    gap: 15px;
-  }
-
+  /*CONTACT ME STYLINGS*/
   .mode-details {
     font-size: 16px;
     margin-bottom: 16px;
@@ -429,6 +452,17 @@ iPad Pro 12.9 Inch
     /* padding: 20px 20px; */
   }
 
+  /*ABOUT ME STYLINGS*/
+  .about-me-text {
+    flex-direction: column;
+  }
+
+  .about-me-img {
+    width: 50%;
+    height: auto;
+  }
+
+  /*OTHER STYLINGS*/
   #about-me-div,
   #careers-div,
   #education-div,
@@ -439,13 +473,9 @@ iPad Pro 12.9 Inch
     margin: 150px 50px;
   }
 
-  .about-me-text {
-    flex-direction: column;
-  }
-
-  .about-me-img {
-    width: 50%;
-    height: auto;
+  .company {
+    align-self: flex-start;
+    width: 200px;
   }
 
   .java-games {
@@ -460,6 +490,16 @@ iPad Pro 12.9 Inch
     /* padding: 20px 20px; */
   }
 
+  /*ABOUT ME STYLINGS*/
+  .about-me-text {
+    flex-direction: column;
+  }
+
+  .about-me-img {
+    width: 50%;
+    height: auto;
+  }
+
   #about-me-div,
   #careers-div,
   #education-div,
@@ -470,13 +510,8 @@ iPad Pro 12.9 Inch
     margin: 150px 50px;
   }
 
-  .about-me-text {
-    flex-direction: column;
-  }
-
-  .about-me-img {
-    width: 50%;
-    height: auto;
+  .company {
+    align-self: flex-start;
   }
 
   .java-games {
