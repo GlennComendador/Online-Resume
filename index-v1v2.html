@@ -2,15 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link href="style.css" rel="stylesheet" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="style-v1v2.css" rel="stylesheet" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,42 +12,29 @@
   <body>
     <div class="container">
       <header class="main-header">
-        <h1 class="my-name">Glenn Comendador</h1>
+        <h1 class="my-name">Glenn Rommel Comendador</h1>
 
         <nav class="easy-access-links">
           <a href="#about-me-div">About Me</a>
           <a href="#skills-div">Skills</a>
-          <a href="#careers-div">Career</a>
+          <a href="#careers-div">Career History</a>
           <a href="#education-div">Education</a>
-          <a href="#projects-div">Projects</a>
+          <a href="#certificates-div">Certificates</a>
+          <a href="#projects-div">Portfolio</a>
+          <a href="#contact-me-div">Contact Me</a>
         </nav>
       </header>
 
       <article>
 
-        <div id="main-page-div">
-          <h2 class="greetings">Hi, I'm Glenn, a Developer</h2>
-
-          <img
-          src="img/developer.png"
-          alt="WIP Photo"
-          width="416"
-          height="416"
-          class="main-page-img"
-          />
-        </div>
-
         <div id="about-me-div">
           <h2 class="about-me">About Me</h2>
-
-          <div class="about-me-text-div">
+          <div class="about-me-text">
             <p class="about-me-contents">
               Hi! I am <strong>Glenn Comendador</strong> and I am a Software
               Engineer from the Philippines. I am an experienced manager, looking to restart my career in the world of Software Development. For the past year, I have invested in gaining new knowledge and modern technologies that are applicable in today's development work such as <strong> HTML, CSS, </strong> and <strong>Javascript</strong>. On top of that, I have knowledge and proficiency in <strong>Java and SQL</strong> and that I value clean and readable code. Outside of work, I enjoy travelling locally and internationally, playing drums and video games, and learning new things that can further improve my career and my personal skills.
             </p>
-          </div>
 
-          <div class="about-me-img-div">
             <img
               src="img/my_photo.jpeg"
               alt="Glenn's Photo"
@@ -68,11 +47,12 @@
 
         <div id="skills-div">
           <h2 class="skills">Skills</h2>
-<!-- 
-          <div class="overall-skills-div"> -->
 
-            <div class="programming-skills-div">
+          <div class="overall-skills-div">
+
+            <div class="hard-skills-div">
               <h3 class="programming-skills">Programming and Development</h3>
+
               <ul>
                 <li>Java</li>
                 <li>Python</li>
@@ -81,9 +61,7 @@
                 <li>HTML5</li>
                 <li>CSS3</li>
               </ul>
-            </div>
 
-            <div class="tools-div">
               <h3 class="tools">Tools and Others</h3>
               <ul>
                 <li>Intelli J</li>
@@ -94,10 +72,10 @@
                 <li>Mac OS</li>
                 <li>Modern Browsers</li>
               </ul>
-            </div>  
-            
+              
+            </div>
 
-            <div class="soft-skills-div">
+            <div class="other-skills-div">
               <h3 class="soft-skills">Soft Skills</h3>
               <ul>
                 <li>Highly Analytical</li>
@@ -109,32 +87,32 @@
                 <li>Team Player</li>
                 <li>Willingness to Learn</li>
               </ul>
-            </div>
 
-            <div class="languages-div">
               <h3 class="language">Languages</h3>
               <ul>
                 <li>English</li>
                 <li>Tagalog</li>
               </ul>
+
             </div>
-<!--             
-          </div> -->
+
+          </div>
+
         </div>
 
         <div id="careers-div">
 
           <h2 class="careers">Professional Experience</h2>
 
-          <!-- <div class="experience-div"> -->
-            <div class="details-div">
+          <div class="experience-div">
+            <div class="company">
               <h3 class="company-name">New 1325 Star Corporation</h3>
               <h4 class="position">President</h4>
               <p class="location">Las Piñas City </p>
               <p class="dates">June 2021 - Present</p>
             </div>
 
-            <div class="description-div">
+            <div class="job">
               <p>
                 As President of New 1325 Star Corporation, I oversaw and led
                 company operations, including Accounting, Delivery, Sales, and
@@ -146,16 +124,16 @@
                 benefits.
               </p>
             </div>
-          <!-- </div> -->
+          </div>
     
-          <!-- <div class="experience-div"> -->
-            <div class="details-div">
+          <div class="experience-div">
+            <div class="company">
               <h3 class="company-name">Pacom Drug Corporation</h3>
               <h4 class="position">Operations Manager</h4>
               <p class="location">Las Piñas City </p>
               <p class="dates">March 2019 - May 2021</p>
             </div>
-            <div class="description-div">
+            <div class="job">
               <p>
                 During my time at Pacom Drug Corporation, I was tasked in
                 developing and maintaining strong relationships with clients and
@@ -168,81 +146,81 @@
                 satisfaction.
               </p>
             </div>
-          <!-- </div> -->
+          </div>
 
-          <!-- <div class="experience-div"> -->
-            <div class="details-div">
+          <div class="experience-div">
+            <div class="company">
               <h3 class="company-name">Gemalto Philippines</h3>
               <h4 class="position">Software Engineer</h4>
               <p class="location">Makati City </p>
               <p class="dates">July 2018 - February 2019</p>
             </div>
 
-            <div class="description-div">
+            <div class="job">
               <p>
                 As a Software Engineer at Gemalto, I was tasked in validating
-                projects through <strong>Unit Testing, Handset Testing, and Non-Regression
-                Testing</strong>. I also <strong>developed, tested, and troubleshooted apps</strong> for the
+                projects through Unit Testing, Handset Testing, and Non-Regression
+                Testing. I also developed, tested, and troubleshooted apps for the
                 Custom Development Group using C Programming Language.
-                <strong>Collaboration</strong> was also done with different developers and teams
+                Collaboration was also done with different developers and teams
                 for project integration.
               </p>
             </div>
-          <!-- </div> -->
+          </div>
 
-          <!-- <div class="experience-div"> -->
-            <div class="details-div">
+          <div class="experience-div">
+            <div class="company">
               <h3 class="company-name">Mystery Manila</h3>
               <h4 class="position">R&D for Technology Intern</h4>
               <p class="location">Makati City </p>
               <p class="dates">May 2017 - August 2017</p>
             </div>
 
-            <div class="description-div">
+            <div class="job">
               <p>
-                As an Intern at Mystery Manila, I was tasked in developing circuit boards and programs using Python, PIC, and PHP for Escape Room usage. I was responsible for <strong>developing, testing, and troubleshooting</strong> various programs and electronics.
+                As an Intern at Mystery Manila, I was tasked in developing circuit boards and programs using Python, PIC, and PHP for Escape Room usage. I was responsible for developing, testing, and troubleshooting various programs and electronics.
               </p>
             </div>
-          <!-- </div> -->
+          </div>
         </div>
 
 
         <div id="education-div">
           <h2 class="education">Education</h2>
 
-          <!-- <div class="school-graduated-div"> -->
-            <div class="details-div">
-              <h3 class="school-name">De La Salle University</h3>
+          <div class="school-graduated-div">
+            <div class="company">
+              <h3 class="school-name">De La Salle University Manila</h3>
               <h4 class="program">BS in Computer Engineering</h4>
               <p class="location">Manila City </p>
               <p class="dates">May 2013 - December 2017</p>
             </div>
 
-              <div class="description-div">
+              <div class="dlsu">
               <p>
-                  I graduated DLSU with decent grades and was awarded with as a <strong>Dean's Lister</strong> 3 times. With my course, we learned different programming languages such as C, Java, Python, topics such as Operating Systems, Data Structures and Algorithms, and SQL Databases. I was also part of an organization known as <strong>Association of Computer Engineering Students (ACCESS)</strong> and was the <strong>Vice President for Academics</strong>. 
+                  I graduated DLSU with decent grades and was awarded with as a Dean's Lister 3 times. With my course, we learned different programming languages such as C, Java, Python, topics such as Operating Systems, Data Structures and Algorithms, and SQL Databases. I was also part of an organization known as Association of Computer Engineering Students (ACCESS) and was the Vice President for Academics. 
               </p>
             </div>
 
-          <!-- </div> -->
+          </div>
         </div>
 
         <div id="certificates-div">
           <h2 class="certificates">Certificates</h2>
           
-          <!-- <div class="cert-finished-div"> -->
-            <div class="details-div">
+          <div class="cert-finished-div">
+            <div class="company">
               <h3 class="cert-name">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</h3>
               <h4 class="instructor">by Colt Steele, Udemy Instructor</h4>
               <p class="dates">Completed May 2023</p>
             </div>
 
-            <div class="description-div certificate-received">
+            <div class="certificate-received">
               <p>
                 I took a course on SQL on Udemy which allowed me to learn the syntax, C.R.U.D., Aggregate Functions, One to Many and Many to Many Relationships, and Window Functions. This has greatly improved my SQL knowledge.
               </p>
             </div>
-          <!-- </div> -->
+          </div>
 
         </div>
 
@@ -251,7 +229,7 @@
           <p class="project-texts">For the past year, I've worked on personal and instructor led projects that further increased my skills. From simple programs to entertaining games, I compiled and organized them which can be accessed in my <a href="https://github.com/GlennComendador" target="_blank">GitHub Profile</a>
           </aside>.</p>
 
-          <div class="project-separation-div">
+          <div class="project-separation">
 
             <p><strong>Guess The Number</strong> was developed as a project from a udemy instructor. It's primary focus is to demonstrate my <strong>Javascript</strong> skills. To enhance the initial version of the project, I added difficulty settings, which lessens the chance of attaining a high score, and an instruction modal to guide the users. Additional modifications on the <strong>HTML and CSS</strong> Files were done.</p>
 
@@ -281,7 +259,7 @@
 
             <p>Besides my Javascript, HTML, and CSS Projects, I have also created <strong>Java Projects</strong> like the <strong>Tic Tac Toe, Rock, Paper, Scissors, and the Lottery Program</strong>. I also have other programs which tacle Java Fundamentals, CodeWars Solutions, and more. You may check them out at my GitHub Repository.</p>
 
-            <div class="java-games-div">
+            <div class="java-games">
               <img
               src="img/tictactoe.png"
               alt="Tic Tac Toe Program"
@@ -308,34 +286,29 @@
 
           <p class="contact-me-text">Like what you see? You may contact me using the details below so we can discuss about possible roles and collaborations 😊</p>
 
-          <div class="contact-separation-div">
-            <!-- <div class="contact-mode-div">
+          <div class="contact-separation">
+            <div class="contact-mode">
+
                 <p class="mode-details m-d first">Email:</p>
                 <p class="mode-details m-d">Mobile:</p>
                 <p class="mode-details m-d">LinkedIn:</p>
                 <p class="mode-details m-d last">GitHub:</p>
-            </div> -->
 
-            <!-- <div class="contact-details-div">
+            </div>
+
+            <div class="contact-details">
+
                 <p class="mode-details first">grpcomendador@gmail.com</p>
                 <p class="mode-details">+63 917 162 9434</p>
                 <p class="mode-details"><a href="https://www.linkedin.com/in/glenn-comendador/" target="_blank"</a>linkedin.com/in/glenn-comendador</a></li>
                 <p class="mode-details last"><a href="https://github.com/GlennComendador" target="_blank"</a>github.com/GlennComendador</a></li>
-            </div> -->
-            <p class="mode-details m-d first">Email:</p>
-            <p class="mode-details first">grpcomendador@gmail.com</p>
-            <p class="mode-details m-d">Mobile:</p>
-            <p class="mode-details">+63 917 162 9434</p>
-            <p class="mode-details m-d">LinkedIn:</p>
-            <p class="mode-details"><a href="https://www.linkedin.com/in/glenn-comendador/" target="_blank"</a>linkedin.com/in/glenn-comendador</a></li>
-            <p class="mode-details m-d last">GitHub:</p>
-            <p class="mode-details last"><a href="https://github.com/GlennComendador" target="_blank"</a>github.com/GlennComendador</a></li>
+
+            </div>
 
           </div>
         </div>
 
         <a class="return" href="#">Back to Top</a>
-        <a href="index-v1v2.html" target="_blank" class="original-site-link">Original Website Version</a>
       </article>
 
       <aside>
@@ -355,5 +328,4 @@
 </html>
 
 <!--https://www.pascalvangemert.nl-->
-<!-- https://zyro.com/preview/brooke -->
 <!--CHECK LINK FOR INSPIRATION-->

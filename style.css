@@ -1,3 +1,13 @@
+/*
+WEBSITE COLORS
+
+Text Colors: #146C94
+Header Colors: #19A7CE
+Misc. Colors: #AFD3E2
+Background Color: #F6F1F1
+Accent Colors: #EFB23C
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -10,203 +20,188 @@ html {
 
 /*GENERAL STYLINGS*/
 body {
-  font-family: verdana;
-  color: #1c1c1c;
-}
-
-.main-header {
-  text-align: center;
-  background-color: #f7cd7a;
-  padding: 450px 250px;
-  /* padding: 50px 250px; */
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 1.2px;
+  color: #146c94;
+  background-color: #f6f1f1;
+  margin: 20px 100px;
 }
 
 nav a:link {
-  font-size: 20px;
-  padding: 10px;
-  line-height: 2;
-  display: inline-block;
+  font-size: 1.5rem;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 3rem;
+  color: #19a7ce;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 2rem;
+  color: #146c94;
+}
+
+h4 {
+  font-size: 1.75rem;
+  color: #146c94;
 }
 
 p {
+  font-size: 1.375rem;
   line-height: 1.5;
-  text-align: justify;
 }
 
 li {
-  font-size: 18px;
-  margin-left: 30px;
+  font-size: 1.375rem;
+  margin-left: 20px;
 }
 
-/*ABOUT ME STYLINGS*/
-#about-me-div {
+/*HEADER STYLINGS*/
+.main-header {
   display: flex;
-  flex-direction: column;
-  margin: 150px 400px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.about-me-text {
+.easy-access-links {
   display: flex;
-  gap: 100px;
-  margin: 50px 0;
+  gap: 40px;
 }
 
-.about-me-contents {
-  flex: 1;
-  line-height: 2;
-  align-self: center;
+/*MAIN PAGE STYLINGS*/
+#main-page-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
 }
 
-.about-me-img {
-  flex: 0 1 auto;
+.greetings {
+  font-size: 3.5rem;
+  color: #146c94;
+  font-family: "PT Serif", serif;
+}
+
+.main-page-img {
   width: 40%;
   height: auto;
-  align-self: center;
-}
-
-/*SKILLS SPECIFIC STYLINGS*/
-ul,
-.hard-skills-div,
-.other-skills-div {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  /*CHANGE TO CSS GRID HERE*/
-}
-
-.hard-skills-div {
-  align-self: flex-start;
-}
-
-ul {
-  gap: 15px;
 }
 
 /*OTHER STYLINGS*/
+#skills-div,
 #careers-div,
 #education-div,
-#skills-div,
-#projects-div,
-#certificates-div,
-#contact-me-div {
-  display: flex;
-  flex-direction: column;
-  margin: 150px 200px;
+#certificates-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 100px 0;
 }
 
-.experience-div,
-.school-graduated-div,
-.overall-skills-div,
-.cert-finished-div,
-.contact-separation {
+.about-me,
+.skills,
+.careers,
+.education,
+.certificates {
+  grid-column: span 2;
+}
+
+/*ABOUT ME SPECIFIC STYLINGS*/
+#about-me-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin: 100px 0;
+}
+
+.about-me-text-div {
   display: flex;
   align-items: center;
-  gap: 70px;
+}
+.about-me-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-img {
+  width: 60%;
+  height: auto;
+}
+
+/*SKILLS SPECIFIC STYLINGS*/
+#skills-div {
+  grid-template-rows: repeat(3, auto);
+}
+
+.tools-div {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+.soft-skills-div {
+  grid-column: 2 / 3;
+}
+
+/*PROJECT SPECIFIC STYLINGS*/
+.project-texts {
   margin: 50px 0;
 }
 
-.company {
-  width: 400px;
-}
-
-.dates {
-  flex: 0 1 auto;
-  align-self: flex-start;
-}
-
-.job,
-.dlsu,
-.hard-skills-div,
-.other-skills-div,
-.certificate-received {
-  flex: 1;
-}
-
-.location,
-.instructor,
-.projects {
-  margin-bottom: 20px;
-}
-
-.other-skills-div {
-  align-self: flex-start;
-}
-
-/*PROJECT STYLINGS*/
-.project-separation {
+.project-separation-div {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.project-texts {
-  margin-bottom: 40px;
-}
-
-.java-games {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 40px 0;
-  gap: 100px;
-}
-
 .proj-img,
 .java-img {
-  width: 80%;
+  width: 100%;
   height: auto;
   align-self: center;
 }
 
-.java-img {
-  width: 30%;
+.java-games-div {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: 40px 0;
 }
 
-.return {
+/*CONTACT ME STYLINGS*/
+.contact-me-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 200px;
+}
+
+.contact-separation-div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 50px;
+  margin: 100px 0;
+}
+
+.m-d {
+  font-weight: bold;
+  justify-self: flex-end;
+}
+
+/*ASIDE AND FOOTER STYLINGS*/
+.return,
+.original-site-link {
   display: flex;
   justify-content: center;
   text-align: center;
   margin-bottom: 30px;
 }
 
-/*CONTACT ME STYLINGS*/
-#contact-me-div {
-  margin: 400px 200px;
-  justify-content: center;
-}
-
-.contact-separation {
-  justify-content: center;
-  margin-top: 100px;
-}
-
-.contact-me-text {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.mode-details {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.last {
-  margin-bottom: 0;
-}
-
-/*ASIDE AND FOOTER STYLINGS*/
 aside {
   display: flex;
   align-items: center;
@@ -222,26 +217,31 @@ aside {
 
 /*HYPERLINK STYLINGS*/
 nav a:link {
-  color: #1c1c1c;
+  color: #146c94;
   text-decoration: none;
 }
+
 a:link {
-  color: #1c1c1c;
+  color: #146c94;
   text-decoration: underline;
 }
 
-a:visited {
-  color: #1c1c1c;
+nav a:visited {
+  color: #146c94;
 }
 
+a:visited {
+  color: #efb23c;
+}
+
+nav a:hover,
 a:hover {
-  color: #1c1c1c;
-  /* font-weight: bold; */
-  background-color: #f7cd7a;
+  color: white;
+  background-color: #146c94;
 }
 
 a:active {
-  background-color: #f7cd7a;
+  background-color: #efb23c;
 }
 
 /*
@@ -281,184 +281,309 @@ iPad Pro 12.9 Inch
 */
 
 /*MOBILE PORTRAIT ORIENTATION*/
-@media (max-width: 743px) and (orientation: portrait) {
+@media (min-width: 390px) and (max-width: 480px) and (orientation: portrait) {
+  body {
+    margin: 20px 50px;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+
+  /*HEADER STYLINGS*/
   .main-header {
-    padding: 375px 0;
-  }
-
-  /*OTHER STYLINGS*/
-  #about-me-div,
-  #careers-div,
-  #education-div,
-  #skills-div,
-  #projects-div,
-  #certificates-div,
-  #contact-me-div {
-    margin: 150px 50px;
-  }
-
-  .about-me-text,
-  .overall-skills-div,
-  .experience-div,
-  .school-graduated-div,
-  .cert-finished-div {
     flex-direction: column;
+    text-align: center;
   }
 
-  .experience-div,
-  .school-graduated-div,
-  .cert-finished-div {
-    gap: 20px;
+  .easy-access-links {
+    display: none;
   }
 
-  .job,
-  .dlsu,
-  .certificate-received {
-    width: 300px;
+  /*MAIN PAGE STYLINGS*/
+  #main-page-div {
+    flex-direction: column;
+    margin: 120px 0;
   }
 
-  .dates {
-    flex: 1;
-    margin-bottom: 20px;
+  .greetings {
+    margin-bottom: 40px;
   }
 
-  .company {
-    width: 300px;
-    align-self: flex-start;
-  }
-
-  /*PROJECT STYLINGS*/
-  .about-me-img {
-    width: 80%;
-    height: auto;
-  }
-
-  .proj-img,
-  .java-img {
+  .main-page-img {
     width: 100%;
     height: auto;
   }
 
-  .java-games {
+  /*OTHER STYLINGS*/
+  #about-me-div,
+  #skills-div,
+  #careers-div,
+  #education-div,
+  #certificates-div,
+  .contact-separation-div {
+    display: flex;
     flex-direction: column;
   }
 
-  /*CONTACT ME STYLINGS*/
-  .contact-separation {
-    gap: 15px;
+  /*ABOUT ME SPECIFIC STYLINGS*/
+  .about-me-img {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
   }
 
-  .mode-details {
-    font-size: 16px;
-    margin-bottom: 16px;
+  /*PROJECTS SPECIFIC STYLINGS*/
+  .java-games-div {
+    display: flex;
+    flex-direction: column;
   }
 
-  .m-d {
-    margin-bottom: 28px;
+  /*CONTACT ME SPECIFIC STYLINGS*/
+  .contact-separation-div {
+    margin: 50px 0;
   }
 
-  .first {
-    margin-bottom: 12px;
+  .contact-me-text {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+
+/*SMALLER DEVICE OPTIMIZATIONS*/
+@media (max-width: 389px) and (orientation: portrait) {
+  body {
+    margin: 20px 20px;
   }
 
-  .last {
-    margin-bottom: 0;
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  li {
+    font-size: 1.25rem;
+  }
+
+  /*HEADER STYLINGS*/
+  .main-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .easy-access-links {
+    display: none;
+  }
+
+  /*MAIN PAGE STYLINGS*/
+  #main-page-div {
+    flex-direction: column;
+    margin: 80px 0;
+  }
+
+  .greetings {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .main-page-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*OTHER STYLINGS*/
+  #about-me-div,
+  #skills-div,
+  #careers-div,
+  #education-div,
+  #certificates-div,
+  .contact-separation-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*ABOUT ME SPECIFIC STYLINGS*/
+  .about-me-img {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  /*PROJECTS SPECIFIC STYLINGS*/
+  .java-games-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*CONTACT ME SPECIFIC STYLINGS*/
+  .contact-separation-div {
+    margin: 50px 0;
+  }
+
+  .contact-me-text {
+    font-size: 1.75rem;
+    text-align: left;
   }
 }
 
 /*MOBILE LANDSCAPE ORIENTATION*/
-@media (max-width: 932px) and (orientation: landscape) {
-  .main-header {
-    padding: 100px 50px;
-    /* padding: 20px 20px; */
+@media (min-width: 768px) and (max-width: 932px) and (orientation: landscape) {
+  body {
+    margin: 20px 50px;
   }
 
-  /*ABOUT ME STYLINGS*/
-  .about-me-text {
-    flex-direction: column;
+  nav a:link {
+    font-size: 1.25rem;
   }
 
-  .about-me-img {
-    width: 80%;
-    height: auto;
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+
+  #main-page-div {
+    margin: 20px 0;
+  }
+
+  .easy-access-links {
+    gap: 10px;
+  }
+
+  .contact-me-text {
+    font-size: 2rem;
+  }
+}
+
+/*SMALLER DEVICE OPTIMIZATIONS*/
+@media (max-width: 767px) and (orientation: landscape) {
+  body {
+    margin: 20px 20px;
+  }
+
+  nav a:link {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+
+  li {
+    font-size: 1.25rem;
+  }
+
+  #main-page-div {
+    margin: 20px 0;
+  }
+
+  .easy-access-links {
+    gap: 10px;
   }
 
   /*OTHER STYLINGS*/
   #about-me-div,
-  #skills-div,
   #careers-div,
   #education-div,
-  #projects-div,
   #certificates-div,
-  #contact-me-div {
-    margin: 100px 100px;
+  .contact-separation-div {
+    display: flex;
+    flex-direction: column;
   }
 
-  .experience-div,
-  .school-graduated-div,
-  .overall-skills-div,
-  .cert-finished-div,
-  .contact-separation {
-    gap: 15px;
-  }
-
-  .company {
-    width: 200px;
-    align-self: flex-start;
-  }
-
-  .dates {
-    flex: 0 1 auto;
-  }
-
-  /*PROJECT STYLINGS*/
-  .proj-img {
-    width: 80%;
-    height: auto;
-  }
-
-  .java-img {
-    width: 30%;
-    height: auto;
-  }
-
-  .java-games {
-    gap: 30px;
-  }
-
-  /*CONTACT ME STYLINGS*/
-  .mode-details {
-    font-size: 16px;
-    margin-bottom: 16px;
-  }
-
-  .m-d {
-    margin-bottom: 28px;
-  }
-
-  .first {
-    margin-bottom: 12px;
-  }
-
-  .last {
-    margin-bottom: 0;
+  .contact-me-text {
+    font-size: 1.75rem;
   }
 }
 
 /*TABLET PORTRAIT ORIENTATION*/
-@media (max-width: 1440px) and (orientation: portrait) {
-  .main-header {
-    padding: 550px 50px;
-    /* padding: 20px 20px; */
+@media (min-width: 481px) and (max-width: 1080px) and (orientation: portrait) {
+  body {
+    margin: 20px 50px;
   }
 
-  /*ABOUT ME STYLINGS*/
-  .about-me-text {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a:link {
+    font-size: 1.25rem;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  /*MAIN PAGE STYLINGS*/
+  #main-page-div {
     flex-direction: column;
+    margin: 160px 0;
   }
 
-  .about-me-img {
-    width: 50%;
+  .easy-access-links {
+    gap: 10px;
+  }
+
+  .greetings {
+    font-size: 4.5rem;
+    margin-bottom: 60px;
+  }
+
+  .main-page-img {
+    width: 80%;
     height: auto;
   }
 
@@ -466,63 +591,16 @@ iPad Pro 12.9 Inch
   #about-me-div,
   #careers-div,
   #education-div,
-  #skills-div,
-  #projects-div,
   #certificates-div,
-  #contact-me-div {
-    margin: 150px 50px;
-  }
-
-  .company {
-    align-self: flex-start;
-    width: 200px;
-  }
-
-  .java-games {
+  .contact-separation-div {
+    display: flex;
     flex-direction: column;
   }
 }
 
 /*TABLET LANDSCAPE ORIENTATION*/
-@media (max-width: 1440px) and (orientation: landscape) {
-  .main-header {
-    padding: 375px 0;
-    /* padding: 20px 20px; */
-  }
-
-  /*ABOUT ME STYLINGS*/
-  .about-me-text {
-    flex-direction: column;
-  }
-
-  .about-me-img {
-    width: 50%;
-    height: auto;
-  }
-
-  #about-me-div,
-  #careers-div,
-  #education-div,
-  #skills-div,
-  #projects-div,
-  #certificates-div,
-  #contact-me-div {
-    margin: 150px 50px;
-  }
-
-  .company {
-    align-self: flex-start;
-  }
-
-  .java-games {
-    flex-direction: column;
+@media (max-width: 1024px) and (orientation: landscape) {
+  .easy-access-links {
+    gap: 20px;
   }
 }
-
-/*
-NOTES:
-
-ADD BIGGER GAP IN MOBILE LANDSCAPE MODE
-FIX MARGINS IN CONTACT ME PAGE IN MOBILE LANDSCAPE MODE
-
-*/
