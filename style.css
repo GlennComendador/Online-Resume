@@ -555,14 +555,6 @@ iPad Pro 12.9 Inch
     margin: 20px 50px;
   }
 
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  nav a:link {
-    font-size: 1.25rem;
-  }
-
   p {
     text-align: justify;
   }
@@ -574,7 +566,7 @@ iPad Pro 12.9 Inch
   }
 
   .easy-access-links {
-    gap: 10px;
+    display: none;
   }
 
   .greetings {
