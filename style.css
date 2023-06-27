@@ -6,6 +6,18 @@ Header Colors: #19A7CE
 Misc. Colors: #AFD3E2
 Background Color: #F6F1F1
 Accent Colors: #EFB23C
+https://colorhunt.co/palette/f6f1f1afd3e219a7ce146c94
+
+
+
+DARK MODE WEBSITE COLORS
+
+Text Colors: #84A7A1
+Header Colors: #2E8A99
+Misc. Colors: #1F6E8C
+Background Color: #0E2954
+Accent Colors: white
+https://colorhunt.co/palette/0e29541f6e8c2e8a9984a7a1
 */
 
 * {
@@ -42,12 +54,10 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  color: #146c94;
 }
 
 h4 {
   font-size: 1.75rem;
-  color: #146c94;
 }
 
 p {
@@ -73,7 +83,7 @@ li {
 }
 
 /*MAIN PAGE STYLINGS*/
-#main-page-div {
+#main-page {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,26 +102,26 @@ li {
 }
 
 /*OTHER STYLINGS*/
-#skills-div,
-#careers-div,
-#education-div,
-#certificates-div {
+#skills,
+#careers,
+#education,
+#certificates {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   margin: 100px 0;
 }
 
-.about-me,
-.skills,
-.careers,
-.education,
-.certificates {
+.about-me-header,
+.skills-header,
+.careers-header,
+.education-header,
+.certificates-header {
   grid-column: span 2;
 }
 
 /*ABOUT ME SPECIFIC STYLINGS*/
-#about-me-div {
+#about-me {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
@@ -135,7 +145,7 @@ li {
 }
 
 /*SKILLS SPECIFIC STYLINGS*/
-#skills-div {
+#skills {
   grid-template-rows: repeat(3, auto);
 }
 
@@ -236,8 +246,9 @@ a:visited {
 
 nav a:hover,
 a:hover {
-  color: white;
+  color: #f6f1f1;
   background-color: #146c94;
+  border-radius: 5px;
 }
 
 a:active {
@@ -314,7 +325,7 @@ iPad Pro 12.9 Inch
   }
 
   /*MAIN PAGE STYLINGS*/
-  #main-page-div {
+  #main-page {
     flex-direction: column;
     margin: 120px 0;
   }
@@ -329,11 +340,11 @@ iPad Pro 12.9 Inch
   }
 
   /*OTHER STYLINGS*/
-  #about-me-div,
-  #skills-div,
-  #careers-div,
-  #education-div,
-  #certificates-div,
+  #about-me,
+  #skills,
+  #careers,
+  #education,
+  #certificates,
   .contact-separation-div {
     display: flex;
     flex-direction: column;
@@ -405,7 +416,7 @@ iPad Pro 12.9 Inch
   }
 
   /*MAIN PAGE STYLINGS*/
-  #main-page-div {
+  #main-page {
     flex-direction: column;
     margin: 80px 0;
   }
@@ -421,11 +432,11 @@ iPad Pro 12.9 Inch
   }
 
   /*OTHER STYLINGS*/
-  #about-me-div,
-  #skills-div,
-  #careers-div,
-  #education-div,
-  #certificates-div,
+  #about-me,
+  #skills,
+  #careers,
+  #education,
+  #certificates,
   .contact-separation-div {
     display: flex;
     flex-direction: column;
@@ -462,7 +473,7 @@ iPad Pro 12.9 Inch
   }
 
   nav a:link {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   h3 {
@@ -478,7 +489,7 @@ iPad Pro 12.9 Inch
     text-align: justify;
   }
 
-  #main-page-div {
+  #main-page {
     margin: 20px 0;
   }
 
@@ -498,11 +509,11 @@ iPad Pro 12.9 Inch
   }
 
   nav a:link {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   h1 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   h2 {
@@ -526,7 +537,7 @@ iPad Pro 12.9 Inch
     font-size: 1.25rem;
   }
 
-  #main-page-div {
+  #main-page {
     margin: 20px 0;
   }
 
@@ -535,10 +546,10 @@ iPad Pro 12.9 Inch
   }
 
   /*OTHER STYLINGS*/
-  #about-me-div,
-  #careers-div,
-  #education-div,
-  #certificates-div,
+  #about-me,
+  #careers,
+  #education,
+  #certificates,
   .contact-separation-div {
     display: flex;
     flex-direction: column;
@@ -560,7 +571,7 @@ iPad Pro 12.9 Inch
   }
 
   /*MAIN PAGE STYLINGS*/
-  #main-page-div {
+  #main-page {
     flex-direction: column;
     margin: 160px 0;
   }
@@ -580,19 +591,145 @@ iPad Pro 12.9 Inch
   }
 
   /*OTHER STYLINGS*/
-  #about-me-div,
-  #careers-div,
-  #education-div,
-  #certificates-div,
+  #about-me,
+  #careers,
+  #education,
+  #certificates,
   .contact-separation-div {
     display: flex;
     flex-direction: column;
   }
 }
 
-/*TABLET LANDSCAPE ORIENTATION*/
+/*TABLET/SMALLER SCREEN LANDSCAPE ORIENTATION*/
 @media (max-width: 1024px) and (orientation: landscape) {
+  nav a:link {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
   .easy-access-links {
     gap: 20px;
+  }
+
+  .about-me-img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/*4K SCREENS*/
+@media (min-width: 2160px) {
+  body {
+    margin: 60px 100px;
+  }
+
+  nav a:link {
+    font-size: 4.5rem;
+  }
+
+  h1 {
+    font-size: 5.25rem;
+  }
+
+  h2 {
+    font-size: 6.75rem;
+  }
+
+  h3 {
+    font-size: 6.75rem;
+  }
+
+  h4 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 3.75rem;
+  }
+
+  li {
+    font-size: 3.75rem;
+    margin-left: 50px;
+  }
+
+  #main-page {
+    margin: 240px 0;
+  }
+
+  .greetings {
+    font-size: 10rem;
+  }
+
+  #skills,
+  #careers,
+  #education,
+  #certificates {
+    gap: 150px;
+    margin: 250px 0;
+  }
+
+  .contact-me-text {
+    font-size: 6.5rem;
+  }
+
+  .return,
+  .original-site-link,
+  aside,
+  #copyright {
+    font-size: 3.75rem;
+  }
+
+  .return {
+    margin-top: 200px;
+  }
+
+  .original-site-link {
+    margin-bottom: 200px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #84a7a1;
+    background-color: #0e2954;
+  }
+
+  h2 {
+    color: #2e8a99;
+  }
+
+  .greetings {
+    color: #84a7a1;
+  }
+
+  /*HYPERLINK STYLINGS*/
+  nav a:link {
+    color: #84a7a1;
+  }
+
+  a:link {
+    color: #84a7a1;
+  }
+
+  nav a:visited {
+    color: #84a7a1;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  nav a:hover,
+  a:hover {
+    color: #0e2954;
+    background-color: #84a7a1;
+  }
+
+  a:active {
+    background-color: white;
   }
 }
