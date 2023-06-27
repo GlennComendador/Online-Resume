@@ -82,6 +82,73 @@ li {
   gap: 40px;
 }
 
+/*HAMBURGER MENU*/
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  border-radius: 5px;
+  background: #f6f1f1;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateX(100%);
+  transition: transform 0.7s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #f6f1f1;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateX(0);
+}
+
+.my-name-burger {
+  font-size: 4rem;
+  color: #146c94;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.menuItem {
+  font-size: 2rem;
+}
+
+.menu-li {
+  margin-top: 20px;
+}
+
+.menu-item-div {
+  text-align: center;
+}
+
+/*DARK / LIGHT MODE STYLINGS*/
+/* .dark-light {
+  background-color: transparent;
+  border: black solid 1px;
+  border-radius: 5px;
+  margin-top: 100px;
+  padding: 10px;
+} */
+
+/* .dark-mode {
+  display: none;
+} */
+
 /*MAIN PAGE STYLINGS*/
 #main-page {
   display: flex;
@@ -255,6 +322,16 @@ a:active {
   background-color: #efb23c;
 }
 
+/*HAMBURGER MENU HYPERLINK STYLINGS*/
+.menuItem:link {
+  color: #146c94;
+  text-decoration: none;
+}
+
+.menuItem:visited {
+  color: #146c94;
+}
+
 /*
 SMALLER SCREEN OPTIMIZATIONS
 
@@ -298,6 +375,7 @@ iPad Pro 12.9 Inch
   }
 
   h1 {
+    font-size: 1.75rem;
     margin-bottom: 40px;
   }
 
@@ -314,12 +392,13 @@ iPad Pro 12.9 Inch
     text-align: justify;
   }
 
-  /*HEADER STYLINGS*/
-  .main-header {
-    flex-direction: column;
-    text-align: center;
+  /*HAMBURGER MENU STYLINGS*/
+  .hamburger {
+    top: 1.4rem;
+    right: 2rem;
   }
 
+  /*HEADER STYLINGS*/
   .easy-access-links {
     display: none;
   }
@@ -405,12 +484,30 @@ iPad Pro 12.9 Inch
     font-size: 1.25rem;
   }
 
-  /*HEADER STYLINGS*/
-  .main-header {
-    flex-direction: column;
-    text-align: center;
+  /*HAMBURGER MENU STYLINGS*/
+  .hamburger {
+    top: 1.4rem;
+    right: 1.5rem;
   }
 
+  .my-name-burger {
+    font-size: 3rem;
+  }
+
+  .menuItem {
+    font-size: 1.75rem;
+  }
+
+  .menu-li {
+    margin-top: 5px;
+  }
+
+  /*DARK / LIGHT MODE STYLINGS*/
+  /* .dark-light {
+    margin-top: 20px;
+  } */
+
+  /*HEADER STYLINGS*/
   .easy-access-links {
     display: none;
   }
@@ -489,6 +586,11 @@ iPad Pro 12.9 Inch
     text-align: justify;
   }
 
+  .hamburger,
+  .closeIcon {
+    display: none;
+  }
+
   #main-page {
     margin: 20px 0;
   }
@@ -509,11 +611,11 @@ iPad Pro 12.9 Inch
   }
 
   nav a:link {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   h1 {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   h2 {
@@ -535,6 +637,11 @@ iPad Pro 12.9 Inch
 
   li {
     font-size: 1.25rem;
+  }
+
+  .hamburger,
+  .closeIcon {
+    display: none;
   }
 
   #main-page {
@@ -568,6 +675,11 @@ iPad Pro 12.9 Inch
 
   p {
     text-align: justify;
+  }
+
+  .hamburger {
+    top: 1.4rem;
+    right: 3rem;
   }
 
   /*MAIN PAGE STYLINGS*/
@@ -611,6 +723,11 @@ iPad Pro 12.9 Inch
     font-size: 1.25rem;
   }
 
+  .hamburger,
+  .closeIcon {
+    display: none;
+  }
+
   .easy-access-links {
     gap: 20px;
   }
@@ -618,6 +735,13 @@ iPad Pro 12.9 Inch
   .about-me-img {
     width: 80%;
     height: auto;
+  }
+}
+
+@media (min-width: 1025px) and (orientation: landscape) {
+  .hamburger,
+  .closeIcon {
+    display: none;
   }
 }
 
@@ -656,6 +780,11 @@ iPad Pro 12.9 Inch
     margin-left: 50px;
   }
 
+  .hamburger,
+  .closeIcon {
+    display: none;
+  }
+
   #main-page {
     margin: 240px 0;
   }
@@ -692,6 +821,7 @@ iPad Pro 12.9 Inch
   }
 }
 
+/*DARK MODE*/
 @media (prefers-color-scheme: dark) {
   body {
     color: #84a7a1;
@@ -702,7 +832,8 @@ iPad Pro 12.9 Inch
     color: #2e8a99;
   }
 
-  .greetings {
+  .greetings,
+  .my-name-burger {
     color: #84a7a1;
   }
 
@@ -731,5 +862,23 @@ iPad Pro 12.9 Inch
 
   a:active {
     background-color: white;
+  }
+
+  /*HAMBURGER MENU HYPERLINK STYLINGS*/
+  .menuItem:link {
+    color: #84a7a1;
+    text-decoration: none;
+  }
+
+  .menuItem:visited {
+    color: #84a7a1;
+  }
+
+  .menu {
+    background: #0e2954;
+  }
+
+  .hamburger {
+    background: #84a7a1;
   }
 }

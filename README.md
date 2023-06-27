@@ -13,7 +13,5 @@ V2.1 Updates to Mobile and Tablet Support<br>
 V2.2 Optimizations and Updates to Mobile and Tablet Support<br>
 V3.0 Better Web Design, with a new Landing Page<br>
 V3.1 Minor UI Updates
-**V3.2 Added Dark Mode and up to 4K Screen Support**
-
-<br>
-Soon: Javascript Elements<br>
+V3.2 Added Dark Mode and up to 4K Screen Support
+**V4.0 Initial Javascript Elements**
