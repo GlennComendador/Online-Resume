@@ -15,4 +15,4 @@ V3.0 Better Web Design, with a new Landing Page<br>
 V3.1 Minor UI Updates<br>
 V3.2 Added Dark Mode and up to 4K Screen Support<br>
 V4.0 Initial Javascript Elements
-V4.1 Multiple HTML Text Updates
+V4.1 Multiple HTML Text Updates (including previous text updates)
