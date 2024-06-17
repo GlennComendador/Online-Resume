@@ -16,4 +16,5 @@ V3.1 Minor UI Updates<br>
 V3.2 Added Dark Mode and up to 4K Screen Support<br>
 V4.0 Initial Javascript Elements<br>
 V4.1 Multiple HTML Text Updates<br>
-V4.2 Multiple HTML Text Updates
+V4.2 Multiple HTML Text Updates<br>
+V4.3 Multiple HTML Text Updates
